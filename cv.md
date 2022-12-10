@@ -1,5 +1,5 @@
 
-# Gramovich Nastassia
+# *Gramovich Nastassia*
 *Junior Front-end developer*
 
 ## Contacts
