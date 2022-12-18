@@ -12,9 +12,9 @@ body{
     margin: 0 auto;
 }
 .header{
-    height: 90px;
+    height: 70px;
     background-color: rgb(50, 50, 50);
-    padding: 30px;
+    padding: 25px;
 }
 .nav .menu{
     display: flex;
@@ -70,14 +70,15 @@ body{
     font-weight: 500;
     font-size: 24px;
 }
-.contacts-summary{
+.contacts-summary, .education-english, .skills-code{
     padding: 40px 180px;
     display: flex;
     justify-content: space-between;
     min-height: 200px;
     background-color: rgb(255, 255, 255);
 }
-.contacts h2{
+.contacts h2, .summary h2, .education h2, .english h2, .skills h2, .code h2, .projects h2{
+    text-transform: uppercase;
     color: rgb(46, 46, 46);
     font-weight: 500;
     font-size: 24px;
@@ -132,6 +133,9 @@ body{
     width: 20px;
     height: 20px;
 }
+.summary{
+    margin-left: 100px;
+}
 .summary .summary-text{
     width: 70%;
     margin: 0 auto;
@@ -139,5 +143,76 @@ body{
     font-weight: 300;
     font-size: 24px;
     text-align: center;
-    margin-right: 30px;
+}
+.english{
+    margin: 0 auto;
+}
+.education-english li{
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.skills h2{
+    margin-left: 100px;
+}
+.skills li{
+    list-style-type: circle;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+.code h2{
+    margin-right: 130px;
+}
+.code-text{
+    margin-right: 220px;
+}
+
+.projects{
+    padding: 40px 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 200px;
+    background-color: rgb(255, 255, 255);
+}
+
+.footer{
+    height: 70px;
+    background-color: rgb(50, 50, 50);
+}
+.footer_wrapper{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.rs_logo{
+    width: 100px;
+}
+.year, .link_gitgub{
+    color: rgba(243, 224, 224, 0.788);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+ .projects .link_gitgub{
+    color: rgb(24, 24, 24);
+    font-style: italic;
+
+}
+.footer_wrapper li{
+    position: relative;
+}
+.link_gitgub::before{
+    content: '';
+    background-image: url(../img/logo/github.png);
+    background-size: 30px 30px;
+    position: absolute;
+    left: -30px;
+    top: -5px;
+    width: 30px;
+    height: 30px;
 }
